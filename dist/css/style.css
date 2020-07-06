@@ -132,7 +132,7 @@ body[data-theme="dark"] {
   body[data-theme="dark"] .jumbotron,
   body[data-theme="dark"] .page-wrapper,
   body[data-theme="dark"] .progress,
-  body[data-theme="dark"] .breadcrumb,
+  body[data-theme="light"] .breadcrumb,
   body[data-theme="dark"] .dropdown-menu,
   body[data-theme="dark"] #main-wrapper,
   body[data-theme="dark"] .wizard:not(.wizard-circle) > .steps .disabled a,
@@ -4378,7 +4378,7 @@ input[type="button"].btn-block {
   padding: 0.75rem 1rem;
   margin-bottom: 1.5rem;
   list-style: none;
-  background-color: #eef5f9;
+  background-color: #c4eaff;
   border-radius: 2px; }
 
 .breadcrumb-item + .breadcrumb-item {
@@ -4386,7 +4386,7 @@ input[type="button"].btn-block {
   .breadcrumb-item + .breadcrumb-item::before {
     display: inline-block;
     padding-right: 0.5rem;
-    color: #6c757d;
+    color: #2b70ad;
     content: "/"; }
 
 .breadcrumb-item + .breadcrumb-item:hover::before {
@@ -8282,7 +8282,7 @@ html[dir="ltr"] body .p-l-0 {
   overflow: hidden; }
 
 .page-wrapper {
-  background: #eef5f9;
+  background: #91d7ff;
   position: relative; }
 
 .page-wrapper > .container-fluid {
@@ -8409,8 +8409,8 @@ html[dir="ltr"] body .p-l-0 {
           display: block; }
     #main-wrapper[data-layout="vertical"][data-sidebar-position="fixed"][data-sidebartype="mini-sidebar"] .topbar .top-navbar .navbar-collapse {
       margin-left: 65px; }
-    #main-wrapper[data-layout="vertical"][data-sidebartype="mini-sidebar"] .page-wrapper {
-      margin-left: 65px; }
+    #main-wrapper[data-layout="vertical"][data-sidebartype="mini-sidebar"] .s {
+      margin-left: 15px; }
     #main-wrapper[data-layout="vertical"][data-sidebartype="mini-sidebar"] .sidebar-nav .hide-menu,
     #main-wrapper[data-layout="vertical"][data-sidebartype="mini-sidebar"] .sidebar-nav .has-arrow:after {
       display: none; }
@@ -9172,7 +9172,7 @@ Table-Jsgrid table
     .page-breadcrumb .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
       content: "\e649";
       font-family: themify;
-      color: #ced4da;
+      color: #89bff5;
       font-size: 11px; }
 
 /*******************

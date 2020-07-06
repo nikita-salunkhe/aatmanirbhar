@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.png">
+    <title>Abyuday</title>
+    <!-- Custom CSS -->
+    <link href="../../assets/libs/flot/css/float-chart.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../../dist/css/style.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar" data-navbarbg="skin5">
+            <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+                <div class="navbar-header" data-logobg="skin5">
+                    <!-- This is for the sidebar toggle which is visible on mobile only -->
+                    <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
+                    <!-- ============================================================== -->
+                    <!-- Logo -->
+                    <!-- ============================================================== -->
+                    <a class="navbar-brand" href="index.html">
+                        <!-- Logo icon -->
+                        <b class="logo-icon p-l-10">
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            <!-- Dark Logo icon
+                            <img src="../../assets/images/wd.png" alt="homepage" width="50" class="light-logo" />-->
+
+                        </b>
+                        <!--End Logo icon -->
+                         <!-- Logo text -->
+                        <span class="logo-text">
+                             <!-- dark Logo text -->
+                             <h2>Abhyuday</h2>
+
+                        </span>
+                        <!-- Logo icon -->
+                        <!-- <b class="logo-icon"> -->
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            <!-- Dark Logo icon -->
+                            <!-- <img src="../../assets/images/logo-text.png" alt="homepage" class="light-logo" /> -->
+
+                        <!-- </b> -->
+                        <!--End Logo icon -->
+                    </a>
+                    <!-- ============================================================== -->
+                    <!-- End Logo -->
+                    <!-- ============================================================== -->
+                    <!-- ============================================================== -->
+                    <!-- Toggle which is visible on mobile only -->
+                    <!-- ============================================================== -->
+                    <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="ti-more"></i></a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav float-left mr-auto">
+
+                        <!-- ============================================================== -->
+                        <!-- create new -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             <span class="d-none d-md-block">Courses<i class="fa fa-angle-down"></i></span>
+                             <span class="d-block d-md-none"><i class="fa fa-plus"></i></span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">For Blind</a>
+                                <a class="dropdown-item" href="#">For Deaf</a>
+
+                                <a class="dropdown-item" href="#">For Dumd</a>
+                            </div>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item search-box"> <a class="nav-link waves-effect waves-dark" href="javascript:void(0)"><i class="ti-search"></i></a>
+                            <form class="app-search position-absolute">
+                                <input type="text" class="form-control" placeholder="Search &amp; enter"> <a class="srh-btn"><i class="ti-close"></i></a>
+                            </form>
+                        </li>
+                    </ul>
+                    <!-- ============================================================== -->
+                    <!-- Right side toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav float-right">
+                        <!-- ============================================================== -->
+                        <!-- Comment -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="mdi mdi-home font-24"></i>
+                            </a>
+                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- End Comment -->
+                        <!-- ============================================================== -->
+                        <!-- ============================================================== -->
+                        <!-- Messages -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" id="2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="font-24 mdi mdi-book-multiple-variant"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right mailbox animated bounceInDown" aria-labelledby="2">
+                                <ul class="list-style-none">
+                                    <li>
+                                        <div class="">
+                                             <!-- Message -->
+                                            <a href="javascript:void(0)" class="link border-top">
+                                                <div class="d-flex no-block align-items-center p-10">
+                                                    <span class="btn btn-success btn-circle"><i class="ti-calendar"></i></span>
+                                                    <div class="m-l-10">
+                                                        <h5 class="m-b-0">Event today</h5>
+                                                        <span class="mail-desc">Just a reminder that event</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <a href="javascript:void(0)" class="link border-top">
+                                                <div class="d-flex no-block align-items-center p-10">
+                                                    <span class="btn btn-info btn-circle"><i class="ti-settings"></i></span>
+                                                    <div class="m-l-10">
+                                                        <h5 class="m-b-0">Settings</h5>
+                                                        <span class="mail-desc">You can customize this template</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <a href="javascript:void(0)" class="link border-top">
+                                                <div class="d-flex no-block align-items-center p-10">
+                                                    <span class="btn btn-primary btn-circle"><i class="ti-user"></i></span>
+                                                    <div class="m-l-10">
+                                                        <h5 class="m-b-0">Pavan kumar</h5>
+                                                        <span class="mail-desc">Just see the my admin!</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <a href="javascript:void(0)" class="link border-top">
+                                                <div class="d-flex no-block align-items-center p-10">
+                                                    <span class="btn btn-danger btn-circle"><i class="fa fa-link"></i></span>
+                                                    <div class="m-l-10">
+                                                        <h5 class="m-b-0">Luanch Admin</h5>
+                                                        <span class="mail-desc">Just see the my new admin!</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- End Messages -->
+                        <!-- ============================================================== -->
+
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../../assets/images/users/1.jpg" alt="user" class="rounded-circle" width="31"></a>
+                            <div class="dropdown-menu dropdown-menu-right user-dd animated">
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user m-r-5 m-l-5"></i> My Profile</a>
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-wallet m-r-5 m-l-5"></i> My Balance</a>
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-email m-r-5 m-l-5"></i> Inbox</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-settings m-r-5 m-l-5"></i> Account Setting</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-power-off m-r-5 m-l-5"></i> Logout</a>
+                                <div class="dropdown-divider"></div>
+                                <div class="p-l-30 p-10"><a href="javascript:void(0)" class="btn btn-sm btn-success btn-rounded">View Profile</a></div>
+                            </div>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="container">
+            <!-- ============================================================== -->
+            <!-- Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+             <div class="page-breadcrumb">
+                <div class="row">
+                    <div class="col-12 d-flex no-block align-items-center">
+
+                        <div class="ml-auto text-right">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Library</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Sales Cards  -->
+                <!-- ============================================================== -->
+
+                <!-- ============================================================== -->
+                <!-- Sales chart -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body bg-cyan">
+
+                                <div class="row">
+                                    <!-- column -->
+                                    <div class="col-lg-4" style="background-color:white; ">
+                                      <h4 >Audio tour</h4>
+                                      <i class="fa fa-file-audio-o m-b-5 font-16"></i>
+                                    </div>
+                                    <div class="col-lg-4">
+                                      <div  >
+                                                  <h2 class=" text-white text-center">Login</h2>
+                                          <h4 class=" text-white">Get Certified and Get Hired!!</h4>
+
+                                          <span><a class="nav-link  waves-effect waves-dark" href=""  aria-haspopup="true" aria-expanded="false"> <i class="mdi mdi-microphone font-24"></i>
+                                          </a></span>
+                                          <button type="button" class="btn btn-outline-light  btn-lg">Yes</button>
+                                          <button type="button" class="btn btn-outline-light btn-lg">Or Register</button>
+                                      </div>
+                                    </div>
+
+                                        <div class="col-lg-4" style="background-color:white;">
+                                          <h4>Video tour</h4>
+                                          <i class="fa fa-file-video-o m-b-5 font-16"></i>
+                                            <i class="fa fa-picture-o  m-b-5 font-16"></i>
+
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin:20px;">
+                                      <div class="col-lg-4"></div>
+                                      <div class="col-lg-4">
+                                          <div class="row">
+                                              <div class="col-6">
+                                                  <div class="bg-dark p-10 text-white text-center">
+                                                     <i class="fa fa-user m-b-5 font-16"></i>
+                                                     <h5 class="m-b-0 m-t-5">2540</h5>
+                                                     <small class="font-light">Total Students</small>
+                                                  </div>
+                                              </div>
+                                               <div class="col-6">
+                                                  <div class="bg-dark p-10 text-white text-center">
+                                                     <i class="fa fa-plus m-b-5 font-16"></i>
+                                                     <h5 class="m-b-0 m-t-5">120</h5>
+                                                     <small class="font-light">New Users</small>
+                                                  </div>
+                                              </div>
+                                              <div class="col-6 m-t-15">
+                                                  <div class="bg-dark p-10 text-white text-center">
+                                                     <i class="fa fa-check m-b-5 font-16"></i>
+                                                     <h5 class="m-b-0 m-t-5">656</h5>
+                                                     <small class="font-light">Students Placed</small>
+                                                  </div>
+                                              </div>
+                                               <div class="col-6 m-t-15">
+                                                  <div class="bg-dark p-10 text-white text-center">
+                                                     <i class="fa fa-certificate m-b-5 font-16"></i>
+                                                     <h5 class="m-b-0 m-t-5">9540</h5>
+                                                     <small class="font-light">Job Opportunities</small>
+                                                  </div>
+                                              </div>
+
+                                              </div>
+                                          </div>
+                                            <div class="col-lg-4"></div>
+                                    </div>
+
+                                    <!-- column -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- Sales chart -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Recent comment and chats -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <!-- column -->
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Courses Offered</h4>
+                            </div>
+                            <div class="comment-widgets scrollable">
+                                <!-- Comment Row -->
+                                <div class="d-flex flex-row comment-row m-t-0">
+                                  <a class="btn-circle btn-lg btn-cyan float-right text-white" href="javascript:void(0)"><i class="fas fa-book"></i></a>
+
+                                    <div class="comment-text w-100">
+                                        <h6 class="font-medium">Alphabets</h6>
+                                        <span class="m-b-15 d-block">Lorem Ipsum is simply dummy text of the printing and type setting industry. </span>
+                                        <div class="comment-footer">
+                                            <span class="text-muted float-right">Launched on: April 14, 2019</span>
+                                            <button type="button" class="btn btn-cyan btn-sm">Enroll</button>
+                                            <button type="button" class="btn btn-success btn-sm">Details</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Comment Row -->
+                                <div class="d-flex flex-row comment-row">
+
+                                    <a class="btn-circle btn-lg btn-cyan float-right text-white" href="javascript:void(0)"><i class="fas fa-book"></i></a>
+
+                                    <div class="comment-text active w-100">
+                                        <h6 class="font-medium">Maths</h6>
+                                        <span class="m-b-15 d-block">Lorem Ipsum is simply dummy text of the printing and type setting industry. </span>
+                                        <div class="comment-footer">
+                                            <span class="text-muted float-right">Launched on: April 14, 2015</span>
+                                            <button type="button" class="btn btn-cyan btn-sm">Enroll</button>
+                                            <button type="button" class="btn btn-success btn-sm">Details</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Comment Row -->
+                                <div class="d-flex flex-row comment-row">
+                                  <a class="btn-circle btn-lg btn-cyan float-right text-white" href="javascript:void(0)"><i class="fas fa-laptop "></i></a>
+                                    <div class="comment-text w-100">
+                                        <h6 class="font-medium">Computer Science</h6>
+                                        <span class="m-b-15 d-block">Lorem Ipsum is simply dummy text of the printing and type setting industry. </span>
+                                        <div class="comment-footer">
+                                            <span class="text-muted float-right">Launched on: August 1, 2020</span>
+                                            <button type="button" class="btn btn-cyan btn-sm">Enroll</button>
+                                            <button type="button" class="btn btn-success btn-sm">Details</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card -->
+
+                        <!-- card -->
+
+                        <!-- card new -->
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title m-b-0">Updates</h4>
+                            </div>
+                            <ul class="list-style-none">
+                                <li class="d-flex no-block card-body">
+                                    <i class="fa fa-check-circle w-30px m-t-5"></i>
+                                    <div>
+                                        <a href="#" class="m-b-0 font-medium p-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                                        <span class="text-muted">Added new course</span>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <div class="tetx-right">
+                                            <h5 class="text-muted m-b-0">20</h5>
+                                            <span class="text-muted font-16">Jan</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="d-flex no-block card-body border-top">
+                                    <i class="fa fa-gift w-30px m-t-5"></i>
+                                    <div>
+                                        <a href="#" class="m-b-0 font-medium p-0">1200 students placed!</a>
+                                        <span class="text-muted">Congratualations!</span>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <div class="tetx-right">
+                                            <h5 class="text-muted m-b-0">11</h5>
+                                            <span class="text-muted font-16">Jan</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="d-flex no-block card-body border-top">
+                                    <i class="fa fa-plus w-30px m-t-5"></i>
+                                    <div>
+                                        <a href="#" class="m-b-0 font-medium p-0">Maruti is a Responsive Admin theme</a>
+                                        <span class="text-muted">But already everything was solved. It will ...</span>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <div class="tetx-right">
+                                            <h5 class="text-muted m-b-0">19</h5>
+                                            <span class="text-muted font-16">Jan</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="d-flex no-block card-body border-top">
+                                    <i class="fa fa-leaf w-30px m-t-5"></i>
+                                    <div>
+                                        <a href="#" class="m-b-0 font-medium p-0">Envato approved Maruti Admin template</a>
+                                        <span class="text-muted">i am very happy to approved by TF</span>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <div class="tetx-right">
+                                            <h5 class="text-muted m-b-0">20</h5>
+                                            <span class="text-muted font-16">Jan</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="d-flex no-block card-body border-top">
+                                    <i class="fa fa-question-circle w-30px m-t-5"></i>
+                                    <div>
+                                        <a href="#" class="m-b-0 font-medium p-0"> I am alwayse here if you have any question</a>
+                                        <span class="text-muted">we glad that you choose our template</span>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <div class="tetx-right">
+                                            <h5 class="text-muted m-b-0">15</h5>
+                                            <span class="text-muted font-16">Jan</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- column -->
+
+                    <div class="col-lg-6">
+                        <!-- Card -->
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">What our users are saying?</h4>
+                                <div class="chat-box scrollable" style="height:475px;">
+                                    <!--chat Row -->
+                                    <ul class="chat-list">
+                                        <!--chat Row -->
+                                        <li class="chat-item">
+                                            <div class="chat-img"><img src="../../assets/images/users/1.jpg" alt="user"></div>
+                                            <div class="chat-content">
+                                                <h6 class="font-medium">Katha Patel</h6>
+                                                <div class="box bg-light-info">Lorem Ipsum is simply dummy text of the printing &amp; type setting industry.</div>
+                                            </div>
+                                            <div class="chat-time">10:56am 15 Jan 2020</div>
+                                        </li>
+                                        <!--chat Row -->
+                                        <li class="chat-item">
+                                          <div class="chat-img"><img src="../../assets/images/users/1.jpg" alt="user"></div>
+                                          <div class="chat-content">
+                                                <h6 class="font-medium">Swarali Purandare</h6>
+                                                <div class="box bg-light-info">It’s Great opportunity to work.</div>
+                                            </div>
+                                            <div class="chat-time">10:57 am  15 Jan 2020</div>
+                                        </li>
+
+                                        <!--chat Row -->
+
+                                        <!--chat Row -->
+                                        <li class="chat-item">
+                                          <div class="chat-img"><img src="../../assets/images/users/1.jpg" alt="user"></div>
+                                          <div class="chat-content">
+                                                <h6 class="font-medium">Shrushti</h6>
+                                                <div class="box bg-light-info">Well we have good budget for the project</div>
+                                            </div>
+                                            <div class="chat-time">11:00 am  15 Jan 2020</div>
+                                        </li>
+                                        <!--chat Row -->
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body border-top">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <div class="input-field m-t-0 m-b-0">
+                                            <textarea id="textarea1" placeholder="Type and enter" class="form-control border-0"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <a class="btn-circle btn-lg btn-cyan float-right text-white" href="javascript:void(0)"><i class="fas fa-paper-plane"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card -->
+
+                        <!-- accoridan part -->
+
+                        <!-- toggle part -->
+
+                        <!-- Tabs -->
+                        <div class="card">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#home" role="tab"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">Tab1</span></a> </li>
+                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#profile" role="tab"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">Tab2</span></a> </li>
+                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#messages" role="tab"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">Tab3</span></a> </li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content tabcontent-border">
+                                <div class="tab-pane active" id="home" role="tabpanel">
+                                    <div class="p-20">
+                                        <p>And is full of waffle to It has multiple paragraphs and is full of waffle to pad out the comment. Usually, you just wish these sorts of comments would come to an end.multiple paragraphs and is full of waffle to pad out the comment..</p>
+                                        <img src="../../assets/images/background/img4.jpg" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="tab-pane  p-20" id="profile" role="tabpanel">
+                                    <div class="p-20">
+                                        <img src="../../assets/images/background/img4.jpg" class="img-fluid">
+                                        <p class="m-t-10">And is full of waffle to It has multiple paragraphs and is full of waffle to pad out the comment. Usually, you just wish these sorts of comments would come to an end.multiple paragraphs and is full of waffle to pad out the comment..</p>
+                                    </div>
+                                </div>
+                                <div class="tab-pane p-20" id="messages" role="tabpanel">
+                                    <div class="p-20">
+                                        <p>And is full of waffle to It has multiple paragraphs and is full of waffle to pad out the comment. Usually, you just wish these sorts of comments would come to an end.multiple paragraphs and is full of waffle to pad out the comment..</p>
+                                        <img src="../../assets/images/background/img4.jpg" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- Recent comment and chats -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer text-center">
+
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../../assets/libs/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+    <script src="../../assets/extra-libs/sparkline/sparkline.js"></script>
+    <!--Wave Effects -->
+    <script src="../../dist/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="../../dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="../../dist/js/custom.min.js"></script>
+    <!--This page JavaScript -->
+    <!-- <script src="../../dist/js/pages/dashboards/dashboard1.js"></script> -->
+    <!-- Charts js Files -->
+    <script src="../../assets/libs/flot/excanvas.js"></script>
+    <script src="../../assets/libs/flot/jquery.flot.js"></script>
+    <script src="../../assets/libs/flot/jquery.flot.pie.js"></script>
+    <script src="../../assets/libs/flot/jquery.flot.time.js"></script>
+    <script src="../../assets/libs/flot/jquery.flot.stack.js"></script>
+    <script src="../../assets/libs/flot/jquery.flot.crosshair.js"></script>
+    <script src="../../assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
+    <script src="../../dist/js/pages/chart/chart-page-init.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- -->
+	<title>Login page</title>
+	<script type="text/javascript">
+
+	<!--check_photo function will send data to API.Remember while sending you have to add "photo=" to link. And this.responseText me output hai...usme se name filter karna padega -->
+	function check_photo()
+	{
+		var str="photo="+document.getElementById("login_photo").value;
+		var data = str;
+
+var xhr = new XMLHttpRequest();
+xhr.withCredentials = false;
+
+xhr.addEventListener("readystatechange", function () {
+	if (this.readyState === this.DONE) {
+		console.log(this.responseText);
+	}
+});
+
+xhr.open("POST", "https://luxand-cloud-face-recognition.p.rapidapi.com/photo/search");
+xhr.setRequestHeader("x-rapidapi-host", "luxand-cloud-face-recognition.p.rapidapi.com");
+xhr.setRequestHeader("x-rapidapi-key", "deb52d4c60msha7a578f27f0154fp1820edjsn2d57098e255d");
+xhr.setRequestHeader("content-type", "application/x-www-form-urlencoded");
+
+xhr.send(data);
+	}
+
+
+
+
+	</script>
+</head>
+
+
+
+	<input id="login_photo" placeholder="Enter your photo URL"><br>
+	<button id="btn1" onclick="check_photo()">Login</button><br>
+
+</body>
+</html>

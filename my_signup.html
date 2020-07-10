@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+    <title>My_SignUp</title>
+</head>
+<body onload="init()">
+<nav class="navbar text-white navbar-dark bg-dark">
+<a href="#" class="navbar-brand">
+Login 
+</a>
+</nav>
+    <div class="container text-center bordered" style="width:280px">
+    <video onclick="snapshot(this);" width=1050 height=450 id="video" controls autoplay></video>
+    <br>
+    <input id="name" placeholder="Enter your name"><br>
+       <button  onclick="login()"  value="login">Click a picture </button>
+       <br>
+<canvas  id="myCanvas" width="400" height="350" hidden></canvas>  
+    </div>
+      
+  </body>
+  <script>
+      //--------------------
+      // GET USER MEDIA CODE
+      //--------------------
+          navigator.getUserMedia = ( navigator.getUserMedia ||
+                             navigator.webkitGetUserMedia ||
+                             navigator.mozGetUserMedia ||
+                             navigator.msGetUserMedia);
+
+      var video;
+      var webcamStream;
+        if (navigator.getUserMedia) {
+           navigator.getUserMedia (
+
+              // constraints
+              {
+                 video: true,
+                 audio: false
+              },
+
+              // successCallback
+              function(localMediaStream) {
+                  video = document.querySelector('video');
+                 video.srcObject = localMediaStream;
+                 webcamStream = localMediaStream;
+              },
+
+              // errorCallback
+              function(err) {
+                 console.log("The following error occured: " + err);
+              }
+           );
+        } else {
+           console.log("getUserMedia not supported");
+        }  
+
+ 
+     
+      var canvas, ctx;
+
+      function init() {
+        // Get the canvas and obtain a context for
+        // drawing in it
+mcanvas = document.getElementById("myCanvas");
+        ctx = mcanvas.getContext('2d');
+      }
+
+      function login() {
+         // Draws current image from the video element into the canvas
+        ctx.drawImage(video,0,0,mcanvas.width,mcanvas.height);
+        var dataURL = mcanvas.toDataURL();
+         //upload image to serever and get the link
+         console.log(dataURL);
+         webcamStream.getTracks().forEach(function(track) {
+        if (track.readyState == 'live' && track.kind === 'video') {
+            track.stop();
+        }
+    });
+
+         var str=document.getElementById("name").value;
+    var fin="name="+str;
+    var data=fin;
+
+var xhr = new XMLHttpRequest();
+xhr.withCredentials = false;
+
+xhr.addEventListener("readystatechange", function () {
+  if (this.readyState === this.DONE) {
+    var msg=this.responseText;
+    
+    var matches = msg.match(/(\d+)/); 
+              
+            if (matches) { 
+              var id=matches[0];
+              console.log(id);
+              give(id);
+                
+  }
+}
+});
+
+xhr.open("POST", "https://luxand-cloud-face-recognition.p.rapidapi.com/subject");
+xhr.setRequestHeader("x-rapidapi-host", "luxand-cloud-face-recognition.p.rapidapi.com");
+xhr.setRequestHeader("x-rapidapi-key", "deb52d4c60msha7a578f27f0154fp1820edjsn2d57098e255d");
+xhr.setRequestHeader("content-type", "application/x-www-form-urlencoded");
+
+xhr.send(data);
+function give(id)
+{create_photo(id);}
+
+
+  }
+
+  function create_photo(id)
+  {
+    
+var k="https://res.cloudinary.com/dk4v2avot/image/upload/v1594305871/Shrushti_kk0hof.jpg";
+var str = k;
+    var fin="photo="+str;
+    var data=fin;
+
+var xhr = new XMLHttpRequest();
+xhr.withCredentials = false;
+
+xhr.addEventListener("readystatechange", function () {
+  if (this.readyState === this.DONE) {
+    var msgid=this.responseText;
+    if(msgid.search("success"))
+    {
+      window.alert("Registration is completed!");
+      //add here link for new page
+    }
+    
+  }
+});
+
+var str1="https://luxand-cloud-face-recognition.p.rapidapi.com/subject/"+id;
+xhr.open("POST", str1);
+xhr.setRequestHeader("x-rapidapi-host", "luxand-cloud-face-recognition.p.rapidapi.com");
+xhr.setRequestHeader("x-rapidapi-key", "deb52d4c60msha7a578f27f0154fp1820edjsn2d57098e255d");
+xhr.setRequestHeader("content-type", "application/x-www-form-urlencoded");
+
+xhr.send(data);
+       }
+       </script>
+</html>

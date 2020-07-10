@@ -9,13 +9,13 @@
     src: url(Potra.ttf) format("truetype");
 }
 body{
-    background: black !important;
+    background: white !important;
 }
 .container{
     margin-top: 2%;
     margin-bottom: 5%;
-    box-shadow: 2px 1px 30px 10px #4d4dff;
-    background: #232224;
+    box-shadow: 1px 1px 3px 3px black;
+    background: ghostwhite;
     border-radius: 20px;
 }
 
@@ -34,7 +34,7 @@ body{
     margin: 100px 50px;
     margin-top: 6%;
     margin-bottom: 50px;
-    box-shadow: 2px 2px 30px 1px #4d4dff;
+    box-shadow: 1px 1px 3px 3px black;
     border-radius: 10px;
 }
 
@@ -60,14 +60,15 @@ button{
     font-weight: bold;
     display: inline-block;
     text-align: center;
+      color: black;
     padding: 14px;
     margin: 12px;
     margin-left: 10px;
     border: none;
     background-color: #343A40;
-    color:#E9ECEF;
+    color:black;
     border-radius: 50%;
-    box-shadow: 1px 1px 10px 2px #4d4dff;
+    box-shadow: 1px 1px 3px 3px black;
     outline: none !important;
     transition: background 0.5s ease-out;
     transition: color 0.5s ease-out;
@@ -75,16 +76,19 @@ button{
 
 .quiz-title{
     margin-top: 20px;
-    color: #4d4dff !important;
-    box-shadow: 1px 1px 10px 2px #4d4dff;
+    color: black;
+    box-shadow: 1px 1px 3px 3px black;
     margin-left: 0;
     padding: 5px;
     border-radius: 10px;
     letter-spacing: 3px;
+      color: black;
+    text-emphasis-color: black;
 }
 .quiz-title h3{
     margin: 0px;
     font-family: "potra";
+    color: black;
     font-size: 35px !important;
 }
 .num{
@@ -103,13 +107,13 @@ button{
     margin: 20px;
     font-family: monospace;
     font-weight: 600;
-    background: #343A40;
+    background: blue;
     padding: 5px 15px;
     font-size: 25px;
     border: 1px;
     border-radius: 10px;
-    color: #39ff14;
-    box-shadow: 1px 1px 3px 3px #39ff14;
+    color: white;
+    box-shadow: 1px 1px 2px 2px black;
     transition: background 0.5s ease-out;
     outline: none !important;
 }
@@ -119,31 +123,17 @@ button{
     margin: 20px;
     font-family: monospace;
     font-weight: 600;
-    background: #343A40;
+    background: yellow;
     padding: 5px 15px;
     font-size: 25px;
     border: 1px;
-    color: #ccff00;
+    color: black;
     border-radius: 10px;
-    box-shadow: 1px 1px 3px 3px #ccff00;
+    box-shadow: 1px 1px 1px 1px black;
     transition: background 0.5s ease-out;
     outline: none !important;
 }
-#review{
-    position: relative;
-    margin: 20px;
-    font-family: monospace;
-    font-weight: 600;
-    background: #343A40;
-    padding: 5px 15px;
-    font-size: 25px;
-    border: 0;
-    color: #b92e34;
-    border-radius: 10px;
-    box-shadow: 1px 1px 3px 3px #FB2B11;
-    transition: background 0.5s ease-out;
-    outline: none !important;
-}
+
 .submit_btn{
     position: relative;
     margin-left: 40%;
@@ -154,9 +144,9 @@ button{
     font-size: 25px;
     border: 0;
     border-radius: 10px;
-    background: #343A40;
+    background: green;
     color: inherit;
-    box-shadow: 1px 1px 3px 3px #4d4dff;
+      box-shadow: 1px 1px 3px 3px black;
     outline: none !important;
     transition: background 0.5s ease-out;
 
@@ -164,7 +154,7 @@ button{
 #next:hover{
 
     background: #009900;
-    box-shadow: 1px 1px 3px 3px #E9ECEF;
+    box-shadow: 1px 1px 3px 3px black;
     color: #E9ECEF;
 }
 #review:hover{
@@ -175,7 +165,7 @@ button{
 .submit_btn:hover{
 
     background: #4d4dff;
-    box-shadow: 1px 1px 3px 3px #E9ECEF;
+    box-shadow: 1px 1px 3px 3px black;
     text-decoration: none !important;
     color: #E9ECEF !important;
 }
@@ -186,7 +176,7 @@ button{
 #prev:hover{
 
     background: #a3862c;
-    box-shadow: 1px 1px 3px 3px #E9ECEF;
+    box-shadow: 1px 1px 3px 3px black;
     color: #E9ECEF;
 }
 .quesno:hover{

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 
@@ -94,18 +95,7 @@
                       <!-- ============================================================== -->
                       <!-- create new -->
                       <!-- ============================================================== -->
-                      <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                           <span class="d-none d-md-block">Courses<i class="fa fa-angle-down"></i></span>
-                           <span class="d-block d-md-none"><i class="fa fa-plus"></i></span>
-                          </a>
-                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <a class="dropdown-item" href="#">For Blind</a>
-                              <a class="dropdown-item" href="#">For Deaf</a>
 
-                              <a class="dropdown-item" href="#">For Dumd</a>
-                          </div>
-                      </li>
                       <!-- ============================================================== -->
                       <!-- Search -->
                       <!-- ============================================================== -->
@@ -139,7 +129,7 @@
                       <!-- Messages -->
                       <!-- ============================================================== -->
                       <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle waves-effect waves-dark" href="courses.html" id="2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="font-24 mdi mdi-book-multiple-variant"></i>
+                          <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" id="2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="font-24 mdi mdi-book-multiple-variant"></i>
                           </a>
                           <div class="dropdown-menu dropdown-menu-right mailbox animated bounceInDown" aria-labelledby="2">
                               <ul class="list-style-none">
@@ -148,37 +138,40 @@
                                            <!-- Message -->
                                           <a href="javascript:void(0)" class="link border-top">
                                               <div class="d-flex no-block align-items-center p-10">
-
+                                                  <span class="btn btn-success btn-circle"><i class="ti-calendar"></i></span>
                                                   <div class="m-l-10">
-                                                      <h5 class="m-b-0">Couses for Deaf</h5>
-
-                                                  </div>
-                                              </div>
-                                          </a>
-                                          <!-- Message -->
-                                          <a href="javascript:void(0)" class="link border-top" href="courses.html">
-                                              <div class="d-flex no-block align-items-center p-10">
-
-                                                  <div class="m-l-10">
-                                                      <h5 class="m-b-0">Couses for Blind</h5>
+                                                      <h5 class="m-b-0">Event today</h5>
+                                                      <span class="mail-desc">Just a reminder that event</span>
                                                   </div>
                                               </div>
                                           </a>
                                           <!-- Message -->
                                           <a href="javascript:void(0)" class="link border-top">
                                               <div class="d-flex no-block align-items-center p-10">
-
+                                                  <span class="btn btn-info btn-circle"><i class="ti-settings"></i></span>
                                                   <div class="m-l-10">
-                                                      <h5 class="m-b-0">Courses for Dumd</h5>
+                                                      <h5 class="m-b-0">Settings</h5>
+                                                      <span class="mail-desc">You can customize this template</span>
                                                   </div>
                                               </div>
                                           </a>
                                           <!-- Message -->
                                           <a href="javascript:void(0)" class="link border-top">
                                               <div class="d-flex no-block align-items-center p-10">
-
+                                                  <span class="btn btn-primary btn-circle"><i class="ti-user"></i></span>
                                                   <div class="m-l-10">
-                                                      <h5 class="m-b-0">Courses for Handicapped</h5>
+                                                      <h5 class="m-b-0">Pavan kumar</h5>
+                                                      <span class="mail-desc">Just see the my admin!</span>
+                                                  </div>
+                                              </div>
+                                          </a>
+                                          <!-- Message -->
+                                          <a href="javascript:void(0)" class="link border-top">
+                                              <div class="d-flex no-block align-items-center p-10">
+                                                  <span class="btn btn-danger btn-circle"><i class="fa fa-link"></i></span>
+                                                  <div class="m-l-10">
+                                                      <h5 class="m-b-0">Luanch Admin</h5>
+                                                      <span class="mail-desc">Just see the my new admin!</span>
                                                   </div>
                                               </div>
                                           </a>
@@ -257,41 +250,42 @@
                 <!-- ============================================================== -->
                 <!-- Start Page Content -->
                 <!-- ============================================================== -->
+                    <form action="register.php" method="post" name="login" class="needs-validation" novalidate>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="card">
-                            <form class="form-horizontal">
+
                                 <div class="card-body">
                                     <h4 class="card-title">Personal Info</h4>
                                     <div class="form-group row">
                                         <label for="fname" class="col-sm-3 text-right control-label col-form-label">First Name</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="fname" placeholder="First Name Here">
+                                            <input type="text" class="form-control" name ="fname" id="fname" placeholder="First Name Here">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-right control-label col-form-label">Middle Name</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="mname" placeholder="Middle Name Here">
+                                            <input type="text" class="form-control" name ="mname" id="mname" placeholder="Middle Name Here">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-right control-label col-form-label">Last Name</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="lname" placeholder="Last Name Here">
+                                            <input type="text" class="form-control" name ="lname" id="lname" placeholder="Last Name Here">
                                         </div>
                                     </div>
                                     <div class="input-group form-group row">
                                           <label for="lname" class="col-sm-3 text-right control-label col-form-label">DOB</label>
                                           <div class="col-sm-9">
-                                        <input type="text" class="form-control " placeholder="mm/dd/yyyy">
+                                        <input type="date" name ="dob" class="form-control " placeholder="mm/dd/yyyy">
                                       </div>
                                     </div>
 
                                     <div class="form-group row">
                                         <label class="col-md-3 m-t-15">Native place</label>
                                         <div class="col-md-9">
-                                            <select class="select2 form-control custom-select" style="width: 100%; height:36px;">
+                                            <select class="select2 form-control custom-select" name ="nativeplace" style="width: 100%; height:36px;">
                                                 <option>Select</option>
                                                 <optgroup label="Alaskan/Hawaiian Time Zone">
                                                     <option value="AK">Alaska</option>
@@ -357,9 +351,9 @@
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label class="col-md-3 m-t-15">Native Country</label>
+                                        <label class="col-md-3 m-t-15">Tehsil</label>
                                         <div class="col-md-9">
-                                            <select class="select2 form-control custom-select" style="width: 100%; height:36px;">
+                                            <select class="select2 form-control custom-select" name ="tehsil" style="width: 100%; height:36px;">
                                                 <option>Select</option>
                                                 <optgroup label="Alaskan/Hawaiian Time Zone">
                                                     <option value="AK">Alaska</option>
@@ -425,9 +419,9 @@
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label class="col-md-3 m-t-15">Native State</label>
+                                        <label class="col-md-3 m-t-15">District</label>
                                         <div class="col-md-9">
-                                            <select class="select2 form-control custom-select" style="width: 100%; height:36px;">
+                                            <select class="select2 form-control custom-select" name ="district" style="width: 100%; height:36px;">
                                                 <option>Select</option>
                                                 <optgroup label="Alaskan/Hawaiian Time Zone">
                                                     <option value="AK">Alaska</option>
@@ -493,9 +487,9 @@
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label class="col-md-3 m-t-15">Native District</label>
+                                        <label class="col-md-3 m-t-15">State</label>
                                         <div class="col-md-9">
-                                            <select class="select2 form-control custom-select" style="width: 100%; height:36px;">
+                                            <select class="select2 form-control custom-select" name ="state" style="width: 100%; height:36px;">
                                                 <option>Select</option>
                                                 <optgroup label="Alaskan/Hawaiian Time Zone">
                                                     <option value="AK">Alaska</option>
@@ -564,27 +558,19 @@
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-right control-label col-form-label">Email</label>
                                         <div class="col-sm-9">
-                                            <input type="email" class="form-control" id="email" placeholder="Email address">
+                                            <input type="email" class="form-control" name ="email" placeholder="Email address">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-right control-label col-form-label">Mobile No.</label>
                                         <div class="col-sm-9">
-                                            <input type="number" class="form-control" id="mobileno" placeholder="Mobile No.">
+                                            <input type="text" class="form-control" name ="mobileno" placeholder="Mobile No.">
                                         </div>
                                     </div>
-                                    <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-right control-label col-form-label">Category</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="category" placeholder="Category">
-                                        </div>
-                                    </div>
-
-
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-right control-label col-form-label">Gender</label>
                                         <div class="col-md-9">
-                                            <select class="select2 form-control custom-select" style="width: 100%; height:36px;">
+                                            <select class="select2 form-control custom-select" name ="gender" style="width: 100%; height:36px;">
                                                 <option>Select</option>
                                                 <optgroup label="Gender">
                                                     <option value="F">Female</option>
@@ -595,32 +581,25 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-right control-label col-form-label">Nationality</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="nationality" placeholder="Nationality">
-                                        </div>
-                                    </div>
-
 
                                     <div class="form-group row">
-                                        <label class="col-md-3">Physically Handicapped</label>
+                                        <label class="col-md-3">Disability</label>
                                         <div class="col-md-9">
                                           <span>  <div class="custom-control custom-radio">
-                                                <input type="checkbox" class="custom-control-input" id="customControlValidation1" name="radio-stacked" required>
-                                                <label class="custom-control-label" for="customControlValidation1">Deaf</label>
+                                                <input type="radio" class="custom-control-input" value="deaf" id="disability" name="disability" required>
+                                                <label class="custom-control-label" for="customControlValidation1">deaf</label>
                                             </div>
                                             <div class="custom-control custom-radio">
-                                                <input type="checkbox" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
-                                                <label class="custom-control-label" for="customControlValidation2">Dumb</label>
+                                                <input type="radio" class="custom-control-input" id="disability" value="dumb" name="disability" required>
+                                                <label class="custom-control-label" for="customControlValidation2">dumb</label>
                                             </div>
                                             <div class="custom-control custom-radio">
-                                                <input type="checkbox" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
-                                                <label class="custom-control-label" for="customControlValidation2">Blind</label>
+                                                <input type="radio" class="custom-control-input" id="disability" value="blind" name="disability" required>
+                                                <label class="custom-control-label" for="customControlValidation2">blind</label>
                                             </div>
                                             <div class="custom-control custom-radio">
-                                                <input type="checkbox" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
-                                                <label class="custom-control-label" for="customControlValidation2">Handicapped</label>
+                                                <input type="radio" class="custom-control-input" id="disability" value="physical disability" name="disability" required>
+                                                <label class="custom-control-label" for="customControlValidation2">physical disability</label>
                                             </div></span>
 
                                         </div>
@@ -629,62 +608,12 @@
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-right control-label col-form-label">Password</label>
                                         <div class="col-sm-9">
-                                            <input type="password" class="form-control" id="lname" placeholder="Password Here">
+                                            <input type="password" class="form-control" name ="password" id="password" placeholder="Password Here">
                                         </div>
                                     </div>
-
-                                      <div class="form-group row">
-                                          <label for="cono1" class="col-sm-3 text-right control-label col-form-label">Contact No</label>
-                                          <div class="col-sm-9">
-                                              <input type="text" class="form-control" id="cono1" placeholder="Contact No Here">
-                                          </div>
-                                      </div>
-
-
                                 </div>
 
-
-                            </form>
                         </div>
-
-                                                <div class="card">
-                                                    <div class="card-body">
-                                                      <center><h6> Upload Documents  </h6></center>
-
-                                                      <div class="form-group row">
-                                                          <label class="col-md-3">Last Passed Marksheet</label>
-                                                          <div class="col-md-9">
-                                                              <div class="custom-file">
-                                                                  <input type="file" class="custom-file-input" id="validatedCustomFile" required>
-                                                                  <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
-                                                                  <div class="invalid-feedback">Example invalid custom file feedback</div>
-                                                              </div>
-                                                          </div>
-                                                      </div>
-
-                                                      <div class="form-group row">
-                                                          <label class="col-md-3">Aadhar Card Upload</label>
-                                                          <div class="col-md-9">
-                                                              <div class="custom-file">
-                                                                  <input type="file" class="custom-file-input" id="validatedCustomFile" required>
-                                                                  <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
-                                                                  <div class="invalid-feedback">Example invalid custom file feedback</div>
-                                                              </div>
-                                                          </div>
-                                                      </div>
-                                                      <div class="form-group row">
-                                                          <label class="col-md-3">Disability Certificate Upload</label>
-                                                          <div class="col-md-9">
-                                                              <div class="custom-file">
-                                                                  <input type="file" class="custom-file-input" id="validatedCustomFile" required>
-                                                                  <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
-                                                                  <div class="invalid-feedback">Example invalid custom file feedback</div>
-                                                              </div>
-                                                          </div>
-                                                      </div>
-                                                    </div>
-                                                </div>
-
                     </div>
 
 
@@ -701,26 +630,26 @@
                                 <div class="form-group row">
                                     <label for="lname" class="col-sm-3 text-right control-label col-form-label">Name of School/College</label>
                                     <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="nameOfSchool" placeholder="Name of School/College">
+                                        <input type="text" class="form-control"  name="pnameOfSchool" id="pnameOfSchool" placeholder="Name of School/College">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="lname" class="col-sm-3 text-right control-label col-form-label">Percentage</label>
                                     <div class="col-sm-9">
-                                        <input type="number" class="form-control" id="percentage" placeholder="Percentage">
+                                        <input type="number" class="form-control" name="ppercentage" id="ppercentage" placeholder="Percentage">
                                     </div>
                                 </div>
                                 <center><h6>Present Class</h6></center>
                                 <div class="form-group row">
                                     <label for="lname" class="col-sm-3 text-right control-label col-form-label">Name of School/College</label>
                                     <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="nameOfSchool" placeholder="Name of School/College">
+                                        <input type="text" class="form-control"  name="nnameOfSchool" id="nnameOfSchool" placeholder="Name of School/College">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="lname" class="col-sm-3 text-right control-label col-form-label">Class</label>
                                     <div class="col-sm-9">
-                                        <input type="number" class="form-control" id="cLass" placeholder="Class">
+                                        <input type="number" class="form-control" name ="nclass" id="ncLass" placeholder="Class">
                                     </div>
                                 </div>
 
@@ -729,437 +658,75 @@
 
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Contact</h5>
-                                  <center><h6 class="card-title">Permanent Address</h6></center>
+                          <div class="card">
+                              <div class="card-body">
+                                <center><h6> Upload Documents  </h6></center>
                                 <div class="form-group row">
-
-                                  <label class="col-md-3 m-t-15">Village</label>
+                                    <label class="col-md-3">Photo</label>
                                     <div class="col-md-9">
-                                        <select class="select2 form-control custom-select" style="width: 100%; height:36px;">
-                                            <option>Select</option>
-                                            <optgroup label="Alaskan/Hawaiian Time Zone">
-                                                <option value="AK">Alaska</option>
-                                                <option value="HI">Hawaii</option>
-                                            </optgroup>
-                                            <optgroup label="Pacific Time Zone">
-                                                <option value="CA">California</option>
-                                                <option value="NV">Nevada</option>
-                                                <option value="OR">Oregon</option>
-                                                <option value="WA">Washington</option>
-                                            </optgroup>
-                                            <optgroup label="Mountain Time Zone">
-                                                <option value="AZ">Arizona</option>
-                                                <option value="CO">Colorado</option>
-                                                <option value="ID">Idaho</option>
-                                                <option value="MT">Montana</option>
-                                                <option value="NE">Nebraska</option>
-                                                <option value="NM">New Mexico</option>
-                                                <option value="ND">North Dakota</option>
-                                                <option value="UT">Utah</option>
-                                                <option value="WY">Wyoming</option>
-                                            </optgroup>
-                                            <optgroup label="Central Time Zone">
-                                                <option value="AL">Alabama</option>
-                                                <option value="AR">Arkansas</option>
-                                                <option value="IL">Illinois</option>
-                                                <option value="IA">Iowa</option>
-                                                <option value="KS">Kansas</option>
-                                                <option value="KY">Kentucky</option>
-                                                <option value="LA">Louisiana</option>
-                                                <option value="MN">Minnesota</option>
-                                                <option value="MS">Mississippi</option>
-                                                <option value="MO">Missouri</option>
-                                                <option value="OK">Oklahoma</option>
-                                                <option value="SD">South Dakota</option>
-                                                <option value="TX">Texas</option>
-                                                <option value="TN">Tennessee</option>
-                                                <option value="WI">Wisconsin</option>
-                                            </optgroup>
-                                            <optgroup label="Eastern Time Zone">
-                                                <option value="CT">Connecticut</option>
-                                                <option value="DE">Delaware</option>
-                                                <option value="FL">Florida</option>
-                                                <option value="GA">Georgia</option>
-                                                <option value="IN">Indiana</option>
-                                                <option value="ME">Maine</option>
-                                                <option value="MD">Maryland</option>
-                                                <option value="MA">Massachusetts</option>
-                                                <option value="MI">Michigan</option>
-                                                <option value="NH">New Hampshire</option>
-                                                <option value="NJ">New Jersey</option>
-                                                <option value="NY">New York</option>
-                                                <option value="NC">North Carolina</option>
-                                                <option value="OH">Ohio</option>
-                                                <option value="PA">Pennsylvania</option>
-                                                <option value="RI">Rhode Island</option>
-                                                <option value="SC">South Carolina</option>
-                                                <option value="VT">Vermont</option>
-                                                <option value="VA">Virginia</option>
-                                                <option value="WV">West Virginia</option>
-                                            </optgroup>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 m-t-15">City</label>
-                                    <div class="col-md-9">
-                                        <select class="select2 form-control m-t-15" multiple="multiple" style="height: 36px;width: 100%;">
-                                            <optgroup label="Alaskan/Hawaiian Time Zone">
-                                                <option value="AK">Alaska</option>
-                                                <option value="HI">Hawaii</option>
-                                            </optgroup>
-                                            <optgroup label="Pacific Time Zone">
-                                                <option value="CA">California</option>
-                                                <option value="NV">Nevada</option>
-                                                <option value="OR">Oregon</option>
-                                                <option value="WA">Washington</option>
-                                            </optgroup>
-                                            <optgroup label="Mountain Time Zone">
-                                                <option value="AZ">Arizona</option>
-                                                <option value="CO">Colorado</option>
-                                                <option value="ID">Idaho</option>
-                                                <option value="MT">Montana</option>
-                                                <option value="NE">Nebraska</option>
-                                                <option value="NM" selected>New Mexico</option>
-                                                <option value="ND">North Dakota</option>
-                                                <option value="UT">Utah</option>
-                                                <option value="WY">Wyoming</option>
-                                            </optgroup>
-                                            <optgroup label="Central Time Zone">
-                                                <option value="AL">Alabama</option>
-                                                <option value="AR">Arkansas</option>
-                                                <option value="IL">Illinois</option>
-                                                <option value="IA">Iowa</option>
-                                                <option value="KS">Kansas</option>
-                                                <option value="KY">Kentucky</option>
-                                                <option value="LA">Louisiana</option>
-                                                <option value="MN">Minnesota</option>
-                                                <option value="MS">Mississippi</option>
-                                                <option value="MO">Missouri</option>
-                                                <option value="OK">Oklahoma</option>
-                                                <option value="SD" selected>South Dakota</option>
-                                                <option value="TX">Texas</option>
-                                                <option value="TN">Tennessee</option>
-                                                <option value="WI">Wisconsin</option>
-                                            </optgroup>
-                                            <optgroup label="Eastern Time Zone">
-                                                <option value="CT">Connecticut</option>
-                                                <option value="DE">Delaware</option>
-                                                <option value="FL">Florida</option>
-                                                <option value="GA">Georgia</option>
-                                                <option value="IN">Indiana</option>
-                                                <option value="ME">Maine</option>
-                                                <option value="MD">Maryland</option>
-                                                <option value="MA">Massachusetts</option>
-                                                <option value="MI">Michigan</option>
-                                                <option value="NH">New Hampshire</option>
-                                                <option value="NJ">New Jersey</option>
-                                                <option value="NY">New York</option>
-                                                <option value="NC">North Carolina</option>
-                                                <option value="OH">Ohio</option>
-                                                <option value="PA">Pennsylvania</option>
-                                                <option value="RI">Rhode Island</option>
-                                                <option value="SC">South Carolina</option>
-                                                <option value="VT">Vermont</option>
-                                                <option value="VA">Virginia</option>
-                                                <option value="WV">West Virginia</option>
-                                            </optgroup>
-                                        </select>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" name ="photo" id="validatedCustomFile" required>
+                                            <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+                                            <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                        </div>
                                     </div>
                                 </div>
 
                                 <div class="form-group row">
-                                    <label class="col-md-3 m-t-15">Taluka</label>
+                                    <label class="col-md-3">Last Passed Marksheet</label>
                                     <div class="col-md-9">
-                                        <select class="select2 form-control custom-select" style="width: 100%; height:36px;">
-                                            <option>Select</option>
-                                            <optgroup label="Alaskan/Hawaiian Time Zone">
-                                                <option value="AK">Alaska</option>
-                                                <option value="HI">Hawaii</option>
-                                            </optgroup>
-                                            <optgroup label="Pacific Time Zone">
-                                                <option value="CA">California</option>
-                                                <option value="NV">Nevada</option>
-                                                <option value="OR">Oregon</option>
-                                                <option value="WA">Washington</option>
-                                            </optgroup>
-                                            <optgroup label="Mountain Time Zone">
-                                                <option value="AZ">Arizona</option>
-                                                <option value="CO">Colorado</option>
-                                                <option value="ID">Idaho</option>
-                                                <option value="MT">Montana</option>
-                                                <option value="NE">Nebraska</option>
-                                                <option value="NM">New Mexico</option>
-                                                <option value="ND">North Dakota</option>
-                                                <option value="UT">Utah</option>
-                                                <option value="WY">Wyoming</option>
-                                            </optgroup>
-                                            <optgroup label="Central Time Zone">
-                                                <option value="AL">Alabama</option>
-                                                <option value="AR">Arkansas</option>
-                                                <option value="IL">Illinois</option>
-                                                <option value="IA">Iowa</option>
-                                                <option value="KS">Kansas</option>
-                                                <option value="KY">Kentucky</option>
-                                                <option value="LA">Louisiana</option>
-                                                <option value="MN">Minnesota</option>
-                                                <option value="MS">Mississippi</option>
-                                                <option value="MO">Missouri</option>
-                                                <option value="OK">Oklahoma</option>
-                                                <option value="SD">South Dakota</option>
-                                                <option value="TX">Texas</option>
-                                                <option value="TN">Tennessee</option>
-                                                <option value="WI">Wisconsin</option>
-                                            </optgroup>
-                                            <optgroup label="Eastern Time Zone">
-                                                <option value="CT">Connecticut</option>
-                                                <option value="DE">Delaware</option>
-                                                <option value="FL">Florida</option>
-                                                <option value="GA">Georgia</option>
-                                                <option value="IN">Indiana</option>
-                                                <option value="ME">Maine</option>
-                                                <option value="MD">Maryland</option>
-                                                <option value="MA">Massachusetts</option>
-                                                <option value="MI">Michigan</option>
-                                                <option value="NH">New Hampshire</option>
-                                                <option value="NJ">New Jersey</option>
-                                                <option value="NY">New York</option>
-                                                <option value="NC">North Carolina</option>
-                                                <option value="OH">Ohio</option>
-                                                <option value="PA">Pennsylvania</option>
-                                                <option value="RI">Rhode Island</option>
-                                                <option value="SC">South Carolina</option>
-                                                <option value="VT">Vermont</option>
-                                                <option value="VA">Virginia</option>
-                                                <option value="WV">West Virginia</option>
-                                            </optgroup>
-                                        </select>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" name ="marksheet" id="validatedCustomFile" required>
+                                            <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+                                            <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-md-3 m-t-15">District</label>
+                                    <label class="col-md-3">Domocile certificate</label>
                                     <div class="col-md-9">
-                                        <select class="select2 form-control custom-select" style="width: 100%; height:36px;">
-                                            <option>Select</option>
-                                            <optgroup label="Alaskan/Hawaiian Time Zone">
-                                                <option value="AK">Alaska</option>
-                                                <option value="HI">Hawaii</option>
-                                            </optgroup>
-                                            <optgroup label="Pacific Time Zone">
-                                                <option value="CA">California</option>
-                                                <option value="NV">Nevada</option>
-                                                <option value="OR">Oregon</option>
-                                                <option value="WA">Washington</option>
-                                            </optgroup>
-                                            <optgroup label="Mountain Time Zone">
-                                                <option value="AZ">Arizona</option>
-                                                <option value="CO">Colorado</option>
-                                                <option value="ID">Idaho</option>
-                                                <option value="MT">Montana</option>
-                                                <option value="NE">Nebraska</option>
-                                                <option value="NM">New Mexico</option>
-                                                <option value="ND">North Dakota</option>
-                                                <option value="UT">Utah</option>
-                                                <option value="WY">Wyoming</option>
-                                            </optgroup>
-                                            <optgroup label="Central Time Zone">
-                                                <option value="AL">Alabama</option>
-                                                <option value="AR">Arkansas</option>
-                                                <option value="IL">Illinois</option>
-                                                <option value="IA">Iowa</option>
-                                                <option value="KS">Kansas</option>
-                                                <option value="KY">Kentucky</option>
-                                                <option value="LA">Louisiana</option>
-                                                <option value="MN">Minnesota</option>
-                                                <option value="MS">Mississippi</option>
-                                                <option value="MO">Missouri</option>
-                                                <option value="OK">Oklahoma</option>
-                                                <option value="SD">South Dakota</option>
-                                                <option value="TX">Texas</option>
-                                                <option value="TN">Tennessee</option>
-                                                <option value="WI">Wisconsin</option>
-                                            </optgroup>
-                                            <optgroup label="Eastern Time Zone">
-                                                <option value="CT">Connecticut</option>
-                                                <option value="DE">Delaware</option>
-                                                <option value="FL">Florida</option>
-                                                <option value="GA">Georgia</option>
-                                                <option value="IN">Indiana</option>
-                                                <option value="ME">Maine</option>
-                                                <option value="MD">Maryland</option>
-                                                <option value="MA">Massachusetts</option>
-                                                <option value="MI">Michigan</option>
-                                                <option value="NH">New Hampshire</option>
-                                                <option value="NJ">New Jersey</option>
-                                                <option value="NY">New York</option>
-                                                <option value="NC">North Carolina</option>
-                                                <option value="OH">Ohio</option>
-                                                <option value="PA">Pennsylvania</option>
-                                                <option value="RI">Rhode Island</option>
-                                                <option value="SC">South Carolina</option>
-                                                <option value="VT">Vermont</option>
-                                                <option value="VA">Virginia</option>
-                                                <option value="WV">West Virginia</option>
-                                            </optgroup>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 m-t-15">State</label>
-                                    <div class="col-md-9">
-                                        <select class="select2 form-control custom-select" style="width: 100%; height:36px;">
-                                            <option>Select</option>
-                                            <optgroup label="Alaskan/Hawaiian Time Zone">
-                                                <option value="AK">Alaska</option>
-                                                <option value="HI">Hawaii</option>
-                                            </optgroup>
-                                            <optgroup label="Pacific Time Zone">
-                                                <option value="CA">California</option>
-                                                <option value="NV">Nevada</option>
-                                                <option value="OR">Oregon</option>
-                                                <option value="WA">Washington</option>
-                                            </optgroup>
-                                            <optgroup label="Mountain Time Zone">
-                                                <option value="AZ">Arizona</option>
-                                                <option value="CO">Colorado</option>
-                                                <option value="ID">Idaho</option>
-                                                <option value="MT">Montana</option>
-                                                <option value="NE">Nebraska</option>
-                                                <option value="NM">New Mexico</option>
-                                                <option value="ND">North Dakota</option>
-                                                <option value="UT">Utah</option>
-                                                <option value="WY">Wyoming</option>
-                                            </optgroup>
-                                            <optgroup label="Central Time Zone">
-                                                <option value="AL">Alabama</option>
-                                                <option value="AR">Arkansas</option>
-                                                <option value="IL">Illinois</option>
-                                                <option value="IA">Iowa</option>
-                                                <option value="KS">Kansas</option>
-                                                <option value="KY">Kentucky</option>
-                                                <option value="LA">Louisiana</option>
-                                                <option value="MN">Minnesota</option>
-                                                <option value="MS">Mississippi</option>
-                                                <option value="MO">Missouri</option>
-                                                <option value="OK">Oklahoma</option>
-                                                <option value="SD">South Dakota</option>
-                                                <option value="TX">Texas</option>
-                                                <option value="TN">Tennessee</option>
-                                                <option value="WI">Wisconsin</option>
-                                            </optgroup>
-                                            <optgroup label="Eastern Time Zone">
-                                                <option value="CT">Connecticut</option>
-                                                <option value="DE">Delaware</option>
-                                                <option value="FL">Florida</option>
-                                                <option value="GA">Georgia</option>
-                                                <option value="IN">Indiana</option>
-                                                <option value="ME">Maine</option>
-                                                <option value="MD">Maryland</option>
-                                                <option value="MA">Massachusetts</option>
-                                                <option value="MI">Michigan</option>
-                                                <option value="NH">New Hampshire</option>
-                                                <option value="NJ">New Jersey</option>
-                                                <option value="NY">New York</option>
-                                                <option value="NC">North Carolina</option>
-                                                <option value="OH">Ohio</option>
-                                                <option value="PA">Pennsylvania</option>
-                                                <option value="RI">Rhode Island</option>
-                                                <option value="SC">South Carolina</option>
-                                                <option value="VT">Vermont</option>
-                                                <option value="VA">Virginia</option>
-                                                <option value="WV">West Virginia</option>
-                                            </optgroup>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 m-t-15">Country</label>
-                                    <div class="col-md-9">
-                                        <select class="select2 form-control custom-select" style="width: 100%; height:36px;">
-                                            <option>Select</option>
-                                            <optgroup label="Alaskan/Hawaiian Time Zone">
-                                                <option value="AK">Alaska</option>
-                                                <option value="HI">Hawaii</option>
-                                            </optgroup>
-                                            <optgroup label="Pacific Time Zone">
-                                                <option value="CA">California</option>
-                                                <option value="NV">Nevada</option>
-                                                <option value="OR">Oregon</option>
-                                                <option value="WA">Washington</option>
-                                            </optgroup>
-                                            <optgroup label="Mountain Time Zone">
-                                                <option value="AZ">Arizona</option>
-                                                <option value="CO">Colorado</option>
-                                                <option value="ID">Idaho</option>
-                                                <option value="MT">Montana</option>
-                                                <option value="NE">Nebraska</option>
-                                                <option value="NM">New Mexico</option>
-                                                <option value="ND">North Dakota</option>
-                                                <option value="UT">Utah</option>
-                                                <option value="WY">Wyoming</option>
-                                            </optgroup>
-                                            <optgroup label="Central Time Zone">
-                                                <option value="AL">Alabama</option>
-                                                <option value="AR">Arkansas</option>
-                                                <option value="IL">Illinois</option>
-                                                <option value="IA">Iowa</option>
-                                                <option value="KS">Kansas</option>
-                                                <option value="KY">Kentucky</option>
-                                                <option value="LA">Louisiana</option>
-                                                <option value="MN">Minnesota</option>
-                                                <option value="MS">Mississippi</option>
-                                                <option value="MO">Missouri</option>
-                                                <option value="OK">Oklahoma</option>
-                                                <option value="SD">South Dakota</option>
-                                                <option value="TX">Texas</option>
-                                                <option value="TN">Tennessee</option>
-                                                <option value="WI">Wisconsin</option>
-                                            </optgroup>
-                                            <optgroup label="Eastern Time Zone">
-                                                <option value="CT">Connecticut</option>
-                                                <option value="DE">Delaware</option>
-                                                <option value="FL">Florida</option>
-                                                <option value="GA">Georgia</option>
-                                                <option value="IN">Indiana</option>
-                                                <option value="ME">Maine</option>
-                                                <option value="MD">Maryland</option>
-                                                <option value="MA">Massachusetts</option>
-                                                <option value="MI">Michigan</option>
-                                                <option value="NH">New Hampshire</option>
-                                                <option value="NJ">New Jersey</option>
-                                                <option value="NY">New York</option>
-                                                <option value="NC">North Carolina</option>
-                                                <option value="OH">Ohio</option>
-                                                <option value="PA">Pennsylvania</option>
-                                                <option value="RI">Rhode Island</option>
-                                                <option value="SC">South Carolina</option>
-                                                <option value="VT">Vermont</option>
-                                                <option value="VA">Virginia</option>
-                                                <option value="WV">West Virginia</option>
-                                            </optgroup>
-                                        </select>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" name="domocile" id="validatedCustomFile" required>
+                                            <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+                                            <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                        </div>
                                     </div>
                                 </div>
 
-
+                                <div class="form-group row">
+                                    <label class="col-md-3">Aadhar Card Upload</label>
+                                    <div class="col-md-9">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" name="adhar" id="validatedCustomFile" required>
+                                            <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+                                            <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3">Disability Certificate Upload</label>
+                                    <div class="col-md-9">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" name ="disable" id="validatedCustomFile" required>
+                                            <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+                                            <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
 
                         </div>
 
-                      </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
 
                                                                     <div class="border-top">
                                                                         <div class="card-body">
-                                                                            <center><button type="button" class="btn btn btn-success">Save and Submit</button></center>
+                                                                            <center><button type="submit" name ="register" class="btn btn btn-success">Save and Submit</button></center>
                                                                         </div>
                                                                     </div>
+
+                                                                  </div>
+                                                                </form>
                 <!-- editor -->
 
                 <!-- ============================================================== -->

@@ -52,7 +52,7 @@
                         <!-- Logo icon -->
                         <b class="logo-icon p-l-10">
                             <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
-                            
+
                              <img src="../../assets/images/favicon.png" alt="user" class="rounded-circle" width="31">
 
                         </b>
@@ -60,7 +60,7 @@
                          <!-- Logo text -->
                         <span class="logo-text">
                              <!-- dark Logo text -->
-                            
+
                              <h2>Abhyuday</h2>
 
                         </span>
@@ -98,12 +98,7 @@
                              <span class="d-none d-md-block">Courses<i class="fa fa-angle-down"></i></span>
                              <span class="d-block d-md-none"><i class="fa fa-plus"></i></span>
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="courses.html">For Blind</a>
-                                <a class="dropdown-item" href="#">For Deaf</a>
 
-                                <a class="dropdown-item" href="#">For Dumd</a>
-                            </div>
                         </li>
                         <!-- ============================================================== -->
                         <!-- Search -->
@@ -119,10 +114,17 @@
                     <!-- ============================================================== -->
                     <ul class="navbar-nav float-right">
                         <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link waves-effect waves-dark" href="jobs.html"  >
+                                <i class="mdi mdi-laptop font-24"></i>
+                            </a>
+
+                        </li>
+
                         <!-- Comment -->
                         <!-- ============================================================== -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="mdi mdi-home font-24"></i>
+                            <a class="nav-link  waves-effect waves-dark" href="" > <i class="mdi mdi-home font-24"></i>
                             </a>
                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#">Action</a>
@@ -137,50 +139,10 @@
                         <!-- ============================================================== -->
                         <!-- Messages -->
                         <!-- ============================================================== -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="courses.html" id="2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="font-24 mdi mdi-book-multiple-variant"></i>
+                        <li class="nav-item ">
+                            <a class="nav-link  waves-effect waves-dark" href="courses.html" id="2" > <i class="font-24 mdi mdi-book-multiple-variant"></i>
                             </a>
-                            <div class="dropdown-menu dropdown-menu-right mailbox animated bounceInDown" aria-labelledby="2">
-                                <ul class="list-style-none">
-                                    <li>
-                                        <div class="">
-                                             <!-- Message -->
-                                            <a href="javascript:void(0)" class="link border-top">
-                                                <div class="d-flex no-block align-items-center p-10">
-                                                    <div class="m-l-10">
-                                                        <h5 class="m-b-0">Couses for Deaf</h5>
 
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <!-- Message -->
-                                            <a href="javascript:void(0)" class="link border-top" href="courses.html">
-                                                <div class="d-flex no-block align-items-center p-10">
-                                                    <div class="m-l-10">
-                                                        <h5 class="m-b-0">Couses for Blind</h5>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <!-- Message -->
-                                            <a href="javascript:void(0)" class="link border-top">
-                                                <div class="d-flex no-block align-items-center p-10">
-                                                    <div class="m-l-10">
-                                                        <h5 class="m-b-0">Courses for Dumd</h5>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <!-- Message -->
-                                            <a href="javascript:void(0)" class="link border-top">
-                                                <div class="d-flex no-block align-items-center p-10">
-                                                    <div class="m-l-10">
-                                                        <h5 class="m-b-0">Courses for Handicapped</h5>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
                         </li>
                         <!-- ============================================================== -->
                         <!-- End Messages -->
@@ -233,15 +195,16 @@
 
                         <div class="ml-auto text-right">
                             <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Library</li>
-                                </ol>
+                              <br>
+                              <br>
                             </nav>
                         </div>
                     </div>
                 </div>
             </div>
+
+
+
             <!-- ============================================================== -->
             <!-- End Bread crumb and right sidebar toggle -->
             <!-- ============================================================== -->
@@ -249,6 +212,27 @@
             <!-- Container fluid  -->
             <!-- ============================================================== -->
             <div class="container-fluid">
+              <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100 " src="slide3.png" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 " src="slide2.png" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 " src="slide1.png" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
                 <!-- ============================================================== -->
                 <!-- Sales Cards  -->
                 <!-- ============================================================== -->
@@ -266,6 +250,12 @@
                                     <div class="col-lg-4" style="background-color:white; ">
                                       <h4 >Audio tour</h4>
                                       <i class="fa fa-file-audio-o m-b-5 font-16"></i>
+                                      <audio controls>
+                                          <audio width="5" height="50" controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+  <source src="horse.wave" type="audio/wav">
+</audio>
                                     </div>
                                     <div class="col-lg-4">
                                       <div  >
@@ -274,13 +264,19 @@
 
                                           <span><a class="nav-link  waves-effect waves-dark" href=""  aria-haspopup="true" aria-expanded="false"> <i class="mdi mdi-microphone font-24"></i>
                                           </a></span>
-                                          <button type="button"  class="btn btn-outline-light  btn-lg">Yes</button>
-                                          <button type="button"onclick="window.location.href='register.html'" class="btn btn-outline-light btn-lg">Or Register</button>
+
+                                          <button type="button"  class="btn btn-outline-light  btn-lg" data-target="#mymodel" data-toggle="modal">Login</button>
+                                          <button type="button"onclick="window.location.href='register.html'" class="btn btn-outline-light btn-lg">Register</button>
                                       </div>
                                     </div>
 
                                         <div class="col-lg-4" style="background-color:white;">
                                           <h4>Video tour</h4>
+                                            <video width="300" height="100" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+
+</video>
                                           <i class="fa fa-file-video-o m-b-5 font-16"></i>
                                             <i class="fa fa-picture-o  m-b-5 font-16"></i>
 
@@ -331,7 +327,7 @@
                     </div>
                 </div>
                 <!-- ============================================================== -->
-                
+
 
 
   </div>
@@ -516,7 +512,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            
+
                         </div>
                         <!-- card -->
 
@@ -570,7 +566,7 @@
             <!-- ============================================================== -->
             <!-- footer -->
             <!-- ============================================================== -->
-           
+
               <!-- Footer -->
             <!-- ============================================================== -->
             <!-- End footer -->
@@ -579,61 +575,89 @@
         <!-- ============================================================== -->
         <!-- End Page wrapper  -->
         <!-- ============================================================== -->
-        
-    </div>
-    <footer class="page-footer font-small cyan darken-3">
 
-        <!-- Footer Elements -->
-        <div class="container">
-      
-          <!-- Grid row-->
-          <div class="row">
-      
-            <!-- Grid column -->
-            <div class="col-md-12 py-5">
-              <div class="mb-5 flex-center">
-      
-                <!-- Facebook -->
-                <a class="fb-ic">
-                  <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                </a>
-                <!-- Twitter -->
-                <a class="tw-ic">
-                  <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                </a>
-                <!-- Google +-->
-                <a class="gplus-ic">
-                  <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                </a>
-                <!--Linkedin -->
-                <a class="li-ic">
-                  <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                </a>
-                <!--Instagram-->
-                <a class="ins-ic">
-                  <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                </a>
-                <!--Pinterest-->
-                <a class="pin-ic">
-                  <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
-                </a>
-              </div>
-            </div>
-            <!-- Grid column -->
-      
+    </div>
+    <footer class="page-footer font-small cyan darken-3 bg-dark">
+    <div class="container">
+      <center>
+        <br>
+        <br>
+          <div class="mb-5 flex-center">
+            <!-- Facebook -->
+            <a class="fb-ic">
+              <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic">
+              <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- Google +-->
+            <a class="gplus-ic">
+              <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic">
+              <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic">
+              <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Pinterest-->
+            <a class="pin-ic">
+              <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+            </a>
           </div>
-          <!-- Grid row-->
-      
-        </div>
+        </center>
+    </div>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright: KSsquare.com
+    </div>
+
+  </footer>
         <!-- Footer Elements -->
-      
+
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3">© 2020 Copyright:
           <a href="https://mdbootstrap.com/"> Abhyuday</a>
         </div>
+
+
+        <div class="container">
+  <div class="modal" id="mymodel">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="text-dark" style= "padding:10px;color:black;">Create Your Account</h3>
+          <button type="button" class="close" data-dismiss="modal">&times</button>
+        </div>
+       <div class="modal-body">
+          <form action="login.php" method="post" name="login" class="needs-validation" novalidate>
+           <div class="input-group mb-5">
+            <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+           <div class="input-group-append">
+           <span class="input-group-text">@example.com</span>
+          </div>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+           </div>
+       <div class="form-group">
+        <input type="password" name="password" class="form-control" placeholder="password" id="pwd" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+    <div class="modal-footer  justify-content-center">
+    <button type="submit" name="confirm" class="btn btn-success"> Confirm</button>
+    </div>
+       </form>
+   </div>
+ </div>
+</div>
+</div>
+</div>
         <!-- Copyright -->
-      
-      </footer>
+
+
     <!-- ============================================================== -->
     <!-- End Wrapper -->
     <!-- ============================================================== -->
